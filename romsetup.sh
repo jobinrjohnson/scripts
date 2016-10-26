@@ -16,6 +16,6 @@ chmod a+x ~/bin/repo
 echo "Please enter your name for git: "
 read git_name
 git config --global user.name "$git_name"
-echo "Please enter your name for git: "
+echo "Please enter your email for git: "
 read git_email
 git config --global user.email "$git_email"
