@@ -4,7 +4,7 @@
 
 ### Installation
 
-> Only works on ubuntu distros and ru these commands as root
+> Only works on ubuntu distros and run these commands as root
 
 Installation.
 
