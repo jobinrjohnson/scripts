@@ -1,6 +1,6 @@
 #check if iam root
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
+  then echo "Please run this script as root"
   exit
 fi
 
@@ -21,7 +21,7 @@ chmod a+x ~/bin/repo
 #configuring git
 echo "Please enter your name for git: "
 read git_name
-git config --global user.name "$git_name"
 echo "Please enter your email for git: "
 read git_email
+git config --global user.name "$git_name"
 git config --global user.email "$git_email"
