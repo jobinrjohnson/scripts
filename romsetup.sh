@@ -19,9 +19,8 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 
 #configuring git
-echo "Please enter your name for git: "
-read git_name
-echo "Please enter your email for git: "
-read git_email
+read -p "Please enter your name for git: " git_name
+read -p "Please enter your email for git: " git_email
+
 git config --global user.name "$git_name"
 git config --global user.email "$git_email"
