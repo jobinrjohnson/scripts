@@ -1,4 +1,4 @@
-# romdevsetup
+# Digitalocean initial setup script
 
   - Initial rom development environment setup shell script.
 
@@ -9,10 +9,10 @@
 Installation.
 
 ```sh
-$ apt-get update
-$ apt-get install git
+$ sudo apt-get update
+$ sudo apt-get install git
 $ git clone https://github.com/jobinrjohnson/romdevsetup.git
 $ cd romdevsetup
-$ chmod +x romsetup.sh
-$ ./romsetup.sh
+$ chmod +x *.sh
+$ ./<script_name>
 ```
