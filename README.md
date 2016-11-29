@@ -11,7 +11,7 @@ Installation.
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install git
-$ git clone https://github.com/jobinrjohnson/romdevsetup.git
+$ git clone https://github.com/jobinrjohnson/dosetup.git
 $ cd romdevsetup
 $ chmod +x *.sh
 $ ./<script_name>
