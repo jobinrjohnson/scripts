@@ -12,7 +12,7 @@ Installation.
 $ sudo apt-get update
 $ sudo apt-get install git
 $ git clone https://github.com/jobinrjohnson/dosetup.git
-$ cd romdevsetup
+$ cd dosetup
 $ chmod +x *.sh
 $ ./<script_name>
 ```
