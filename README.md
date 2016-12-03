@@ -1,6 +1,6 @@
 # Digitalocean initial setup script
 
-  - Initial rom development environment setup shell script.
+  - Initial environment setup shell script.
 
 ### Installation
 
