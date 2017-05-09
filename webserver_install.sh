@@ -31,5 +31,10 @@ echo "<IfModule mod_dir.c>" > /etc/apache2/mods-enabled/dir.conf
 echo "        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm" >> /etc/apache2/mods-enabled/dir.conf
 echo "</IfModule>" >> /etc/apache2/mods-enabled/dir.conf
 
+#install phpmyadmin
+apt-get install phpmyadmin
+php5enmod mcrypt
+
 #restarting apache2
 service apache2 restart
+
