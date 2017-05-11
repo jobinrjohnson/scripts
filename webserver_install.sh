@@ -20,9 +20,12 @@ apt-get update
 #install apache
 apt-get --assume-yes install apache2
 #install php
-apt-get --assume-yes install mysql-server php5-mysql
+apt-get --assume-yes install mysql-server
 #configure mysql
+mysql_secure_installation
 mysql_install_db
+#install phpmysql
+apt-get install php5-mysql
 #install php mods
 apt-get --assume-yes install php5 libapache2-mod-php5 php5-mcrypt
 
