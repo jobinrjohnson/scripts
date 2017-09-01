@@ -10,8 +10,8 @@ sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*
 #installing essential packages
 apt-get update
 apt-get upgrade
-apt-get install openjdk-8-jdk
-apt-get install bison g++-multilib git gperf libxml2-utils make zlib1g-dev:i386 zip
+apt-get install --assume-yes openjdk-8-jdk
+apt-get install --assume-yes bison g++-multilib git gperf libxml2-utils make zlib1g-dev:i386 zip
 
 #setting up environments
 mkdir -p ~/bin
