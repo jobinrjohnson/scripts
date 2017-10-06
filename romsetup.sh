@@ -11,7 +11,7 @@ sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*
 apt-get update
 apt-get upgrade
 apt-get install --assume-yes openjdk-8-jdk
-apt-get install --assume-yes bison g++-multilib git gperf libxml2-utils make zlib1g-dev:i386 zip
+apt-get --assume-yes install bison build-essential curl flex git git-core gnupg gperf libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk2.8-dev libxml2 libxml2-utils lzop openjdk-7-jdk openjdk-7-jre pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev unzip lib32readline-gplv2-dev lib32z1-dev make python-networkx phablet-tools
 
 #setting up environments
 mkdir -p ~/bin
