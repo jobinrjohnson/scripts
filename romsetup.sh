@@ -8,21 +8,15 @@ fi
 sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*
 
 #installing essential packages
-apt-get update
-apt-get upgrade
-apt-get install --assume-yes openjdk-8-jdk
-apt-get --assume-yes install bison build-essential curl flex git git-core gnupg gperf libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk2.8-dev libxml2 libxml2-utils lzop openjdk-7-jdk openjdk-7-jre pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev unzip lib32readline-gplv2-dev lib32z1-dev make python-networkx phablet-tools
-
-#setting up environments
-mkdir -p ~/bin
-cd ~/bin
+apt update
+apt upgrade
+apt install --assume-yes openjdk-8-jdk
+apt --assume-yes install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
 
 #setting up repo
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-chmod a+x ~/bin/repo
-
-echo "export PATH=~/bin:$PATH" >> ~/.bashrc
-source ~/.bashrc
+curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo
+sed -i -e 's/env python/env python3/g' /bin/repo
+chmod a+x /bin/repo
 
 #configuring git
 read -p "Please enter your name for git: " git_name
